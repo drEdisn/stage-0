@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&family=Rubik:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" href="./images/favicon.svg">
+  <title>2048</title>
+</head>
+
+<body class="body">
+  <div class="overlay"></div>
+  <div class=""></div>
+  <header class="header" id="start">
+    <div class="container header__container">
+      <div class="board">
+        <h1 class="title">
+          2048
+        </h1>
+        <div class="game__board">
+          <a class="new-game__button" href="#start">
+            <button class="game">START GAME</button>
+          </a>
+          <div class="score__container">
+            <span class="score__text">Score</span>
+            <span class="score">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="audio__content">
+        <div class="audio__play"></div>
+        <div class="sound__setting">
+          <span class="volume__img"></span>
+          <input class="volume__audio" type="range" min ="1" max="100" value="50">
+        </div>
+      </div>
+    </div>
+    <div class="container main__container">
+      <div class="window__container">
+        <span class="text__over">
+        </span>
+        <span class="text__window">
+        </span>
+        <div class="end__score">
+          <span class="text__score">You score:</span>
+          <span class="score__result"></span>
+        </div>
+        <div class="button__container">
+          <span class="button__window continue">CONTINUE</span>
+          <span class="button__window restart">RESTART</span>      
+        </div>
+  
+      </div>
+      <div class="gameboard">
+        <div class="cells">
+          <span class="cells__item"></span>
+          <span class="cells__item"></span>
+          <span class="cells__item"></span>
+          <span class="cells__item"></span>
+          <span class="cells__item"></span>
+          <span class="cells__item"></span>
+          <span class="cells__item"></span>
+          <span class="cells__item"></span>
+          <span class="cells__item"></span>
+          <span class="cells__item"></span>
+          <span class="cells__item"></span>
+          <span class="cells__item"></span>
+          <span class="cells__item"></span>
+          <span class="cells__item"></span>
+          <span class="cells__item"></span>
+          <span class="cells__item"></span>
+        </div>
+        <div class="tile__container">
+        </div>
+      </div>
+      <div class="record__table">
+        <h2 class="record__title">
+          TOP10
+        </h2>
+        <div class="top__score"></div>
+      </div>
+      <div class="table"></div>
+    </div>
+  </header>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="info">
+        <span class="info__item">©</span>
+        <span class="info__item">2022</span>
+        <a href="https://github.com/drEdisn">github</a>
+      </div>
+      <a class="rss" href="https://rs.school/js-stage0/"></a>
+    </div>
+  </footer>
+  <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
