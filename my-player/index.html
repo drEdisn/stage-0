@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" href="./images/play.png">
+  <title>Audio Player</title>
+</head>
+<body>
+  <img class="bg__image" src="./images/beyonce.png">
+  <div class="container">
+    <img class="sound__image" src="./images/beyonce.png" alt="img">
+    <div class="panel__info">
+      <span class="panel__button play"></span>
+      <p class="song__artist">
+        Beyonce
+      </p>
+      <p class="song__title">
+        Don't Hurt Yourself
+      </p>
+      <span class="panel__button next"></span>
+      <span class="panel__button back"></span>
+    </div>
+    <div class="audio__range">
+      <div class="durationTime">1:00</div>
+      <input class="time__line" type="range" min="0" value="0" max="">
+      <div class="currentTime">0:00</div>
+    </div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>
