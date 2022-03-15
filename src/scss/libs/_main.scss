@@ -1,0 +1,77 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.movie {
+  height: 550px;
+  width: 300px;
+  background-color: $seccolor;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.767)) drop-shadow(0 0 5px rgba(0, 0, 0, 0.336));
+  overflow: hidden;
+  &__image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+    width: 300px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &__title {
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  &__rate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 32px;
+    font-weight: bold;
+    color: $orange;
+    background-color: $seccolor;
+    border-radius: 3px;
+    text-align: center;
+    padding: 8px;
+    margin: 10px;
+  }
+
+  &__overview {
+    position: absolute;
+    width: 300px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    line-height: 30px;
+    padding: 70px 20px 20px 20px;
+    background-color: $white;
+    color: black;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.5s ease-in;
+
+    h3 {
+      position: absolute;
+      top: 0;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 40px;
+      padding-top: 20px;
+    }
+  }
+
+  &:hover &__overview {
+    transform: translateY(0%);
+    overflow-y: auto;
+  }
+}
